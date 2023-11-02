@@ -1,2 +1,12 @@
-<h1>Publishers#new</h1>
-<p>Find me in app/views/publishers/new.html.erb</p>
+<h3>Add New Category</h3>
+
+<%form for @publisher do |f|%>
+	<div class="form-group">
+		<%=f.label :name%><br/>
+		<%=f.textfield :name, class: "form-control"%><br/>
+	</div>
+
+	<%=f.submit 'Submit', class: "btn btn-primary"%>
+	<%= link_to 'Cancel', publishers_path, class: "btn btn-default"%>
+<%end%>
+

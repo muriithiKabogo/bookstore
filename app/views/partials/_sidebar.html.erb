@@ -1,5 +1,4 @@
 <% if params[:controller] == 'about' %>
-
 <div class = "well">
 	<h3>Location Info</h3>
 	<ul>
@@ -9,6 +8,19 @@
 		<li>Phone: 254722889933</li>
 		<li>Email: support@thebookstore.com</li>
 	</ul>
+</div>
+
+<%end%>
+
+<% if params[:controller] == 'books' && params[:action] == 'index' || params[:action] == 'show' %>
+
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+    Ruby on Rails
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">PHP</a>
+  <a href="#" class="list-group-item list-group-item-action">HtML 5</a>
+ 
 </div>
 
 <%end%>

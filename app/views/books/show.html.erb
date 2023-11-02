@@ -1,2 +1,21 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<div id="books-show">
+	<h2></h2>
+	<div class = "books-show-left">
+		<%= image_tag('covers/alone.png')%>
+	</div>
+
+	<div class= "books-show-right">
+		<h3>Book info:</h3>
+		<ul>
+			<li> <strong>Category</strong> Ruby on Rails</li>
+			<li> <strong>Author</strong> Ruby on Rails</li>
+		</ul>
+
+		<%=link_to 'Buy for $5.47',"ebay.com", class: "btn btn-success"%>
+	</div>
+
+	<div class = "clearfix"></div>
+	<h4>Excerpt</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vulputate finibus risus, id lobortis augue accumsan sed. Vestibulum a ipsum lorem. Nulla congue aliquam pulvinar. Donec commodo risus eu sagittis interdum. Proin feugiat lacus quis ligula convallis eleifend. Nam non laoreet dui. Aenean iaculis sed neque sed facilisis. Vivamus bibendum at arcu et viverra.Donec sit amet pulvinar turpis. Fusce mattis diam dictum odio porttitor malesuada nec vitae sem. Nullam vel justo accumsan, convallis ipsum vel, posuere justo. Vivamus semper ullamcorper facilisis. Phasellus molestie auctor felis, ac hendrerit orci dignissim non. Cras nec sapien aliquam, euismod purus ac, faucibus augue. Integer vitae est et dolor gravida mollis. Fusce orci tellus, auctor a placerat eu, imperdiet sed mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eu tempus libero.
+	</p>
+</div>

@@ -1,5 +1,10 @@
 class BooksController < ApplicationController
   def new
+    @page_title = "Add Book"
+    @book = Book.new
+    @category = Category.new
+    @publisher = Publisher.new
+    @author = Author.new
   end
 
   def create
