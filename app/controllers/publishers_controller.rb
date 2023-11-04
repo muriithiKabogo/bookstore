@@ -22,4 +22,10 @@ class PublishersController < ApplicationController
 
   def show
   end
+
+
+  private
+  def category_params
+    params.require(:publisher).permit(:name)
+  end
 end
